@@ -1,0 +1,122 @@
+<html>
+<head>
+	<title>Unit Converter</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="css/stylesheet.css"/>
+</head>
+<body>
+
+    <div class="container">
+    	<div class="header clearfix">
+    		<h3 class="text-muted">Unit Converter</h3>
+    	</div>
+		<ul class="nav nav-tabs" role="tablist">
+			<li role="presentation" class="active"><a href="#temperature" aria-controls="temperature" role="tab" data-toggle="tab">Temperature</a></li>
+		    <li role="presentation"><a href="#weight" aria-controls="weight" role="tab" data-toggle="tab">Weight</a></li>
+		    <li role="presentation"><a href="#length" aria-controls="lenght" role="tab" data-toggle="tab">Length</a></li>
+		    <li role="presentation"><a href="#volume" aria-controls="volume" role="tab" data-toggle="tab">Volume</a></li>
+		</ul>
+		<div class="tab-content">
+		    <div role="tabpanel" class="tab-pane active" id="temperature">
+		    	<form>
+					<div class="form-group">
+						<label>From: </label>
+						<input id="fromValue" type="text"/>
+						<select id="from">
+							<option class="option1">Fahrenheit</option>
+							<option class="option2">Celsius</option>
+							<option class="option3">Kelvin</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>To: </label>
+						<select id="to">
+							<option class="option1">Fahrenheit</option>
+							<option class="option2">Celsius</option>
+							<option class="option3">Kelvin</option>
+						</select>
+					</div>
+					<button type="submit" id="submitButton" class="btn btn-primary">Submit</button>
+				</form>
+		    </div>
+		    <div role="tabpanel" class="tab-pane" id="weight">
+		    	<form>
+					<div class="form-group">
+						<label>From: </label>
+						<input id="fromWeight" type="text"/>
+						<select id="fromWeightUnit">
+							<option class="option1">kg</option>
+							<option class="option2">lbs</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>To: </label>
+						<select id="toWeightUnit">
+							<option class="option1">lbs</option>
+							<option class="option2">kg</option>
+						</select>
+					</div>
+					<button type="submit" id="submitButtonWeight" class="btn btn-primary">Submit</button>
+				</form>
+		    </div>
+		    <div role="tabpanel" class="tab-pane" id="length">
+		    	<form>
+					<div class="form-group">
+						<label>From: </label>
+						<input id="fromLength" type="text"/>
+						<select id="fromLengthUnit">
+							<option class="option1">feet</option>
+							<option class="option2">meters</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>To: </label>
+						<select id="toLengthUnit">
+							<option class="option1">meters</option>
+							<option class="option2">feet</option>
+						</select>
+					</div>
+					<button type="submit" id="submitButtonLength" class="btn btn-primary">Submit</button>
+				</form>
+		    </div>
+		    <div role="tabpanel" class="tab-pane" id="volume">
+		    	<form>
+					<div class="form-group">
+						<label>From: </label>
+						<input id="fromVolume" type="text"/>
+						<select id="fromVolumeUnit">
+							<option class="option1">liters</option>
+							<option class="option2">gallons</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<label>To: </label>
+						<select id="toVolumeUnit">
+							<option class="option1">gallons</option>
+							<option class="option2">liters</option>
+						</select>
+					</div>
+					<button type="submit" id="submitButtonVolume" class="btn btn-primary">Submit</button>
+				</form>
+		    </div>
+		</div>
+	  	<div id="results">
+		</div>
+		<footer class="footer">
+		<p>&copy; 2017 Unit Converter.</p>
+		</footer>
+	</div>
+
+		
+	</div> 
+    <script
+        src="http://code.jquery.com/jquery-3.2.1.js"
+        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/temperature.js"></script>
+    <script src="js/weight.js"></script>
+    <script src="js/length.js"></script>
+    <script src="js/volume.js"></script>
+  </body>
+</html>
