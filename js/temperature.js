@@ -35,7 +35,7 @@ function convertTemperature(e){
 		var finalValue=Math.round(finalValue * 100) / 100;
 		results.innerHTML="<h2>Your converted value is "+finalValue+" degrees Celsius</h2>";
 	} else if(unitFrom==="Kelvin" && unitTo==="Fahrenheit"){
-		var finalValue=1.8(parseInt(fromValue)-273.15)+32;
+		var finalValue=1.8*(parseInt(fromValue)-273.15)+32;
 		var finalValue=Math.round(finalValue * 100) / 100;
 		results.innerHTML="<h2>Your converted value is "+finalValue+" degrees Fahrenheit</h2>";
 	} else if (unitFrom===unitTo){
